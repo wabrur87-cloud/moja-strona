@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Poznaj świat supersamochodów – osiągi, design i motoryzacyjne ciekawostki.">
+  <title>Świat supersamochodów</title>
+  <style>
+    :root { --bg:#0b0d12; --panel:#151923; --text:#f4f6fb; --muted:#aab2c2; --accent:#ff4d35; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; font-family:Arial,Helvetica,sans-serif; background:var(--bg); color:var(--text); line-height:1.6; }
+    header { min-height:78vh; display:flex; flex-direction:column; justify-content:center; padding:32px max(7vw,24px); background:linear-gradient(90deg,rgba(5,7,12,.94),rgba(5,7,12,.55)),url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=2000&q=85') center/cover; }
+    nav { position:absolute; top:0; left:0; right:0; display:flex; justify-content:space-between; align-items:center; padding:22px max(7vw,24px); background:rgba(5,7,12,.35); }
+    nav strong { letter-spacing:2px; } nav a { color:white; text-decoration:none; margin-left:22px; font-size:14px; }
+    nav a:hover { color:var(--accent); }
+    .eyebrow { color:var(--accent); text-transform:uppercase; letter-spacing:4px; font-size:13px; font-weight:bold; }
+    h1 { font-size:clamp(42px,7vw,82px); line-height:1.02; max-width:760px; margin:14px 0 20px; }
+    header p { color:#d2d7e1; max-width:560px; font-size:18px; }
+    .button { display:inline-block; margin-top:20px; padding:13px 22px; border-radius:4px; background:var(--accent); color:white; text-decoration:none; font-weight:bold; width:max-content; }
+    main { max-width:1120px; margin:auto; padding:70px 24px; }
+    h2 { font-size:clamp(28px,4vw,42px); margin:0 0 12px; }
+    .intro { color:var(--muted); max-width:700px; margin-bottom:32px; }
+    .cards { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+    .card { background:var(--panel); border:1px solid #252b38; border-radius:10px; overflow:hidden; }
+    .card img { width:100%; height:210px; object-fit:cover; display:block; }
+    .card-content { padding:20px; }
+    .card h3 { margin:0 0 8px; font-size:22px; }
+    .card p { color:var(--muted); margin:0; }
+    .facts { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:60px; }
+    .fact { padding:24px; border-left:3px solid var(--accent); background:#11151e; }
+    .fact strong { display:block; font-size:28px; }
+    .fact span { color:var(--muted); font-size:14px; }
+    .note { margin-top:54px; padding:28px; border-radius:10px; background:linear-gradient(120deg,#202634,#141923); }
+    footer { text-align:center; padding:28px 20px; color:var(--muted); border-top:1px solid #252b38; font-size:14px; }
+    @media(max-width:760px) { nav { align-items:flex-start; gap:12px; flex-direction:column; } nav a { margin:0 14px 0 0; } .cards,.facts { grid-template-columns:1fr; } header { min-height:720px; } }
+  </style>
+</head>
+<body>
+  <nav>
+    <strong>REV / MOTOR</strong>
+    <div><a href="#samochody">Samochody</a><a href="#ciekawostki">Ciekawostki</a><a href="#kontakt">O stronie</a></div>
+  </nav>
+
+  <header>
+    <span class="eyebrow">Pasja • Technologia • Prędkość</span>
+    <h1>Świat supersamochodów</h1>
+    <p>Odkryj niezwykłe połączenie nowoczesnej technologii, wyjątkowego designu i osiągów, które jeszcze niedawno wydawały się niemożliwe.</p>
+    <a class="button" href="#samochody">Poznaj samochody</a>
+  </header>
+
+  <main>
+    <section id="samochody">
+      <span class="eyebrow">Ikony motoryzacji</span>
+      <h2>Trzy wyjątkowe maszyny</h2>
+      <p class="intro">Supersamochody zachwycają nie tylko prędkością. To także zaawansowana aerodynamika, dopracowane silniki i projekty, które na długo zapadają w pamięć.</p>
+      <div class="cards">
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=900&q=80" alt="Sportowy samochód Porsche">
+          <div class="card-content"><h3>Porsche 911</h3><p>Legenda, która łączy sportowy charakter z rozwiązaniami sprawdzającymi się również na co dzień.</p></div>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=900&q=80" alt="Nowoczesny samochód sportowy">
+          <div class="card-content"><h3>Lamborghini</h3><p>Odważne linie nadwozia, mocne silniki i charakterystyczny styl włoskiej motoryzacji.</p></div>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=900&q=80" alt="Czerwony samochód sportowy">
+          <div class="card-content"><h3>Chevrolet Corvette</h3><p>Amerykański samochód sportowy znany z dużych możliwości i wyrazistego wyglądu.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="ciekawostki" class="facts">
+      <div class="fact"><strong>Aerodynamika</strong><span>Odpowiedni kształt nadwozia pomaga utrzymać stabilność przy dużych prędkościach.</span></div>
+      <div class="fact"><strong>Lekkie materiały</strong><span>Włókno węglowe i aluminium pomagają ograniczyć masę pojazdu.</span></div>
+      <div class="fact"><strong>Hybrydy</strong><span>Silniki elektryczne mogą wspierać jednostki spalinowe i poprawiać osiągi.</span></div>
+    </section>
+
+    <section class="note" id="kontakt">
+      <span class="eyebrow">Czy wiesz, że?</span>
+      <h2>Motoryzacja stale się zmienia</h2>
+      <p>Dzisiejsze samochody sportowe korzystają z komputerów, czujników i systemów, które pomagają kierowcy kontrolować pojazd. A oto wymagany znak: &#127051;</p>
+      <p>Ta strona została przygotowana jako krótka prezentacja świata supersamochodów.</p>
+    </section>
+  </main>
+
+  <footer>© 2026 REV / MOTOR — Strona edukacyjna o motoryzacji</footer>
+</body>
+</html>
